@@ -27,23 +27,22 @@ struct grid_node{				//the grid is made up of these nodes
 	int TEXTURE;				//numeric value which determines textures
 	//character* occupant;		//pointer to current occupant if is_occupied is true
 	bool alliance;				//determines the occupants allegiance t=ally f=enemy
-};
+}
 
-public class map_grid_script.cs : MonoBehaviour {
-	grid_node GRID[24][24];		//grid initialization 
-	void grid_initialize(){		//function that is called at run time to determine contents of grid
+public class map_grid_script : MonoBehaviour { 
+    grid_node [,] GRID = new grid_node[24, 24];
+
+    void grid_initialize(){		//function that is called at run time to determine contents of grid
 		
-	};
+	}
+
 	
 	grid_node grid_check(ref int x, ref int y){
-		return GRID[x][y];
+		return GRID[x, y];
 	}
 	
-	bool grid_move_unit(ref int x, ref int y, ){		//function to move a unit on the grid
-		if(GRID[x][y].is_occupied == true){				//this function will check if a space is occupied by an enemy
-			
-			}else if(GRID[x][y].is_occupied == false){	//this will allow you to move a unit to the space
-			
-			}
+	bool grid_move_unit(ref int x, ref int y){      //function to move a unit on the grid
+
+        return false;
 	}
 }
