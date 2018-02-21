@@ -19,13 +19,13 @@ enum TILE_TEXTURE : int{//enumerates and assigns numeric value to identify which
     MAX_TILE_TEXTURE
 }
 
-
 struct grid_node{					//the grid is made up of these nodes
 	public int x_pos;				//node position
 	public int y_pos;
 	public bool is_occupied;		//bool value which determines wether the spot is occupied
 	public int TEXTURE;				//numeric value which determines textures
 	//public character* occupant;	//pointer to current occupant if is_occupied is true
+	public GameObject tile;
 }
 
 public class map_grid_script : MonoBehaviour { 
@@ -38,6 +38,7 @@ public class map_grid_script : MonoBehaviour {
 				GRID[i, j].y_pos = j;
 				GRID[i, j].is_occupied = false;
 				GRID[i, j].TEXTURE = (int)TILE_TEXTURE.GRASS9_TILE_TEXTURE;
+				Instantiate(GRID[i, j].tile);
 			}
 		}
 	}
