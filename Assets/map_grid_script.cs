@@ -20,18 +20,18 @@ enum TILE_TEXTURE : int{//enumerates and assigns numeric value to identify which
 }
 
 
-struct grid_node{				//the grid is made up of these nodes
-	public int x_pos;					//node position
+struct grid_node{					//the grid is made up of these nodes
+	public int x_pos;				//node position
 	public int y_pos;
-	public bool is_occupied;			//bool value which determines wether the spot is occupied
+	public bool is_occupied;		//bool value which determines wether the spot is occupied
 	public int TEXTURE;				//numeric value which determines textures
-	//public character* occupant;		//pointer to current occupant if is_occupied is true
+	//public character* occupant;	//pointer to current occupant if is_occupied is true
 }
 
 public class map_grid_script : MonoBehaviour { 
     grid_node [,] GRID = new grid_node[24, 24];
 
-    void grid_initialize(){		//function that is called at run time to determine contents of grid
+    void grid_initialize(){			//function that is called at run time to determine contents of grid
 		for(int i=0; i<24; i++){	
 			for(int j=0; j<24; j++){
 				GRID[i, j].x_pos = i;
@@ -42,13 +42,15 @@ public class map_grid_script : MonoBehaviour {
 		}
 	}
 
-	
 	grid_node grid_check(ref int x, ref int y){
 		return GRID[x, y];
 	}
 	
-	bool grid_move_unit(ref int x, ref int y){      //function to move a unit on the grid
-
-        return false;
+	bool grid_occupied_check(ref int x, ref int y){      
+		if(GRID[x, y].is_occupied == true){
+			return false;
+		}else	if(GRID[x, y].is_occupied == false){
+				return true;
+			}else {return false;}
 	}
 }
