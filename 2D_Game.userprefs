@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{D733E416-6BF5-CD8F-DC97-21A729BA9F5C}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/menu.cs">
+    <Files>
+      <File FileName="Assets/menu.cs" Line="10" Column="11" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.2D__Game PreferredExecutionTarget="Unity.Editor" />
+</Properties>
