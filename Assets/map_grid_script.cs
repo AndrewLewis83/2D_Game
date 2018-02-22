@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 enum TILE_TEXTURE : int{//enumerates and assigns numeric value to identify which textures to render
-    WATER0_TILE_TEXTURE,
-    WATER1_TILE_TEXTURE,
+    GRASS1_TILE_TEXTURE,
+    GRASS2_TILE_TEXTURE,
+    GRASS3_TILE_TEXTURE,
+    GRASS4_TILE_TEXTURE,
+	WALL1_TILE_TEXTURE,
+	WALL2_TILE_TEXTURE,
+	WATER1_TILE_TEXTURE,
     WATER2_TILE_TEXTURE,
     WATER3_TILE_TEXTURE,
     WATER4_TILE_TEXTURE,
@@ -12,10 +17,7 @@ enum TILE_TEXTURE : int{//enumerates and assigns numeric value to identify which
     WATER6_TILE_TEXTURE,
     WATER7_TILE_TEXTURE,
     WATER8_TILE_TEXTURE,
-    GRASS9_TILE_TEXTURE,
-    GRASS10_TILE_TEXTURE,
-    GRASS11_TILE_TEXTURE,
-    GRASS12_TILE_TEXTURE,
+    WATER9_TILE_TEXTURE,
     MAX_TILE_TEXTURE
 }
 
@@ -37,7 +39,7 @@ public class map_grid_script : MonoBehaviour {
 				GRID[i, j].x_pos = i;
 				GRID[i, j].y_pos = j;
 				GRID[i, j].is_occupied = false;
-				GRID[i, j].TEXTURE = (int)TILE_TEXTURE.GRASS9_TILE_TEXTURE;
+				GRID[i, j].TEXTURE = (int)TILE_TEXTURE.GRASS1_TILE_TEXTURE;
 				Instantiate(GRID[i, j].tile);
 			}
 		}
