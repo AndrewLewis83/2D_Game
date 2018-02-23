@@ -5,14 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class menu : MonoBehaviour {
 
-	// Use this for initialization
+    // Menu font, Pixel Gothic, by Kajetan Andrzejak - https://www.dafont.com/search.php?q=gothic
+
 	public void PlayGame () {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 
     public void quitButton(){
