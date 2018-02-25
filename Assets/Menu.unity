@@ -404,7 +404,7 @@ GameObject:
   - component: {fileID: 541830138}
   - component: {fileID: 541830137}
   m_Layer: 5
-  m_Name: Text
+  m_Name: creditsBodyText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -416,17 +416,17 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 541830135}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 847915499}
-  m_RootOrder: 2
+  m_Father: {fileID: 1554805750}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.726306, y: -3.9080644}
-  m_SizeDelta: {x: 308.6, y: 97.3}
+  m_AnchoredPosition: {x: 4.3, y: -73.8}
+  m_SizeDelta: {x: 311.8, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &541830137
 MonoBehaviour:
@@ -470,6 +470,12 @@ MonoBehaviour:
 
 
     Pixel Gothic font by Kajetan Andrzejak (https://www.dafont.com/search.php?q=gothic)
+
+
+    tutorial on scrolling credits: https://www.youtube.com/watch?v=cj6hwCjiVZE
+
+
+    tutorial on menu UI: https://www.youtube.com/watch?v=zc8ac_qUXQY
 
 
 
@@ -786,9 +792,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1727126615}
+  - {fileID: 1554805750}
   - {fileID: 810661809}
-  - {fileID: 541830136}
   m_Father: {fileID: 1575019319}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -809,7 +814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.09245244, g: 0.21378128, b: 0.66176474, a: 0.392}
+  m_Color: {r: 0.20000002, g: 0.2392157, b: 0.38431376, a: 0.392}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1039,6 +1044,59 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1510999438}
+--- !u!1 &1554805749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1554805750}
+  - component: {fileID: 1554805751}
+  m_Layer: 5
+  m_Name: scrollingCredits
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1554805750
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1554805749}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1727126615}
+  - {fileID: 541830136}
+  m_Father: {fileID: 847915499}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -153.44232}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1554805751
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1554805749}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: da8658e55ae8f47d489a02831b01e8a5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1575019315
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,14 +1367,14 @@ RectTransform:
   m_GameObject: {fileID: 1727126614}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -39}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.99585783, y: 0.99585783, z: 0.99585783}
   m_Children: []
-  m_Father: {fileID: 847915499}
+  m_Father: {fileID: 1554805750}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: 81}
+  m_AnchoredPosition: {x: 6, y: 109}
   m_SizeDelta: {x: 350, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1727126616
