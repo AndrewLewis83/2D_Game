@@ -6,16 +6,9 @@ public class Charaters : MonoBehaviour {
 
     class Character
     {
-        private
-            int HP,
-                Atk,
-                Spd,
-                Def,
-                Lck,
-                Mov;
+        private int HP, Atk, Spd, Def, Lck, Mov;
 
-        public
-            Character()
+        Character()
         {
             HP = Random.Range(27, 35);
             Atk = Random.Range(7, 15); 
@@ -26,38 +19,46 @@ public class Charaters : MonoBehaviour {
         }
 
         //Getters
-        int Get_HP()
+        public int Get_HP()
         {
             return HP;
         }
 
-        int Get_Atk()
+        public int Get_Atk()
         {
             return Atk;
         }
 
-        int Get_Spd()
+        public int Get_Spd()
         {
             return Spd;
         }
 
-        int Get_Def()
+        public int Get_Def()
         {
             return Def;
         }
 
-        int Get_Lck()
+        public int Get_Lck()
         {
             return Lck;
         }
 
 
         //Functions
-        void Change_Hp(int iAtk)
+        void Change_Hp(int iAtk, int ispd)
         {
             HP = HP - (iAtk - Def);
+
+            if ((Spd -ispd) > 5)
+            {
+                HP = HP - (iAtk - Def);
+            }
         }
     }
+
+    Character spawn;
+
 
 	// Use this for initialization
 	void Start () {
@@ -66,6 +67,6 @@ public class Charaters : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 }
