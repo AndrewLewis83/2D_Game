@@ -2,21 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Charaters : MonoBehaviour {
-
-    class Character
-    {
-        private int HP, Atk, Spd, Def, Lck, Mov;
-
-        Character()
-        {
+public class Character : MonoBehaviour {
+	public bool ally;
+    private int HP, Atk, Spd, Def, Lck, Mov;
+    Character(){
             HP = Random.Range(27, 35);
             Atk = Random.Range(7, 15); 
             Spd = Random.Range(6, 13);
             Def = Random.Range(5, 9);
             Lck = Random.Range(1, 7);
             Mov = 5;
-        }
+    }
 
         //Getters
         public int Get_HP()
@@ -43,7 +39,7 @@ public class Charaters : MonoBehaviour {
         {
             return Lck;
         }
-
+		
 
         //Functions
         void Change_Hp(int iAtk, int ispd)
@@ -55,10 +51,6 @@ public class Charaters : MonoBehaviour {
                 HP = HP - (iAtk - Def);
             }
         }
-    }
-
-    Character spawn;
-
 
 	// Use this for initialization
 	void Start () {
