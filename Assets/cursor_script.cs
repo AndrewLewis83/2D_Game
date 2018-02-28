@@ -12,7 +12,7 @@ public class cursor_script : MonoBehaviour {
 	void Update () {
 		float newxPos;
 		float newyPos;
-		float gridl = 1;
+		float gridl = .16f;
 			if(Input.GetKeyDown("w")){
 				newxPos = transform.position.x;
 				newyPos = transform.position.y + gridl;
@@ -29,10 +29,13 @@ public class cursor_script : MonoBehaviour {
 				newxPos = transform.position.x + gridl;
 				newyPos = transform.position.y;
 				transform.position = new Vector3(newxPos, newyPos, 0);
-			}//else if(Input.GetKeyDown("Enter")){
-				
-			//}else if(Input.GetKeyDown("Shift")){
-				
+			}
+			
+		GameObject character = GameObject.FindWithTag("character");
+		if(transform.position == character.transform.position){
+			//if(character.ally == true){
+				print("character selected");
 			//}
+		}
 	}
 }
