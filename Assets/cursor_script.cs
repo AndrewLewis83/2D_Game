@@ -12,7 +12,7 @@ public class cursor_script : MonoBehaviour {
 	void Update () {
 		float newxPos;
 		float newyPos;
-		float gridl = .16f;
+		float gridl = 1;
 			if(Input.GetKeyDown("w")){
 				newxPos = transform.position.x;
 				newyPos = transform.position.y + gridl;
