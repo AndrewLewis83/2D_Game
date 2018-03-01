@@ -329,6 +329,7 @@
   <ItemGroup>
     <Compile Include="Assets\Charaters.cs" />
     <Compile Include="Assets\Controls.cs" />
+    <Compile Include="Assets\cursor_script.cs" />
     <Compile Include="Assets\main_script.cs" />
     <Compile Include="Assets\map_grid_script.cs" />
     <Compile Include="Assets\menu.cs" />
