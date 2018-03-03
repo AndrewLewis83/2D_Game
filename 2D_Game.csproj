@@ -327,11 +327,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Charaters.cs" />
+    <Compile Include="Assets\Characters.cs" />
     <Compile Include="Assets\Controls.cs" />
     <Compile Include="Assets\cursor_script.cs" />
     <Compile Include="Assets\cursorCollisionScript.cs" />
     <Compile Include="Assets\cursorControllerScript.cs" />
+    <Compile Include="Assets\HUDtext.cs" />
     <Compile Include="Assets\main_script.cs" />
     <Compile Include="Assets\map_grid_script.cs" />
     <Compile Include="Assets\menu.cs" />

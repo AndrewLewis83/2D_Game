@@ -425,8 +425,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.3, y: -73.8}
-  m_SizeDelta: {x: 311.8, y: 300}
+  m_AnchoredPosition: {x: 4.3, y: -177}
+  m_SizeDelta: {x: 311.8, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &541830137
 MonoBehaviour:
@@ -476,6 +476,18 @@ MonoBehaviour:
 
 
     tutorial on menu UI: https://www.youtube.com/watch?v=zc8ac_qUXQY
+
+
+    HUD font:
+
+    https://www.dafont.com/search.php?q=irish
+
+
+    Tutorial for coding HUD:
+
+    https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial/displaying-score-and-text
+
+
 
 
 
@@ -592,10 +604,10 @@ RectTransform:
   m_Father: {fileID: 847915499}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -123}
-  m_SizeDelta: {x: 160, y: 41.9}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 2, y: 27}
+  m_SizeDelta: {x: 160, y: 41.899994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &810661810
 MonoBehaviour:
