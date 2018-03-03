@@ -187,6 +187,7 @@
 'Assets/Charaters.cs'
 'Assets/Controls.cs'
 'Assets/cursor_script.cs'
+'Assets/cursorCollisionScript.cs'
 'Assets/cursorControllerScript.cs'
 'Assets/main_script.cs'
 'Assets/map_grid_script.cs'
