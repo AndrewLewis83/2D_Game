@@ -3,14 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class cursorCollisionScript : MonoBehaviour{
-    
-    public void OnTriggerEnter2D(Collider2D other)
-    {
+    public AudioSource cursor2;
 
-        if (other.gameObject.tag == "character")
-        {
+	
+	void Start(){
+		cursor2 = GetComponent<AudioSource>();
+		
+	}
+	
+    public void OnTriggerEnter2D(Collider2D other){
+        if (other.gameObject.tag == "character"){
+			cursor2.Play();
             print("Collision detected with trigger object " + other.name);
-        }
+				
+				
+			
+		}
     }
 
     public void OnTriggerStay2D(Collider2D other)
@@ -22,4 +30,5 @@ public class cursorCollisionScript : MonoBehaviour{
     {
         print(gameObject.name + " and trigger object " + other.name + " are no longer colliding");
     }
+
 }
