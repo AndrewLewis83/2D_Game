@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class Characters : MonoBehaviour {
 	
     public bool ally;
-    public bool mainPlayer;
-    public bool mainPlayerSelect;
-    public bool playableCharacter;
-    public GameObject cursor2;
+    public bool mainPlayer; // if true, character becomes main character
+    public bool mainPlayerSelect; // for taking control of character with cursor
+    public bool playableCharacter; // prevents player from taking control of enemy player.
+    public GameObject cursor2; // allows player to reactivate cursor
 
 	public int HP;
     public int Atk; 
