@@ -645,10 +645,10 @@ MonoBehaviour:
   m_Text: 'move cursor over a character to view stats.
 
 
-    Press "space" to take control of one of your characters.
+    Press ''space'' to take control of one of your characters.
 
 
-    press "w" to reactivate the cursor.'
+    press ''w'' to reactivate the cursor.'
 --- !u!222 &339009470
 CanvasRenderer:
   m_ObjectHideFlags: 0
