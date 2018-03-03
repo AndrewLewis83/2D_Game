@@ -4,7 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Characters : MonoBehaviour {
-	public bool ally;
+	
+    public bool ally;
+    public bool mainPlayer;
+    public bool mainPlayerSelect;
+    public bool playableCharacter;
+    public GameObject cursor2;
 
 	public int HP;
     public int Atk; 
@@ -37,17 +42,42 @@ public class Characters : MonoBehaviour {
     public void OnTriggerStay2D(Collider2D other)
     {
 
+        mainPlayerSelect = true;
         HUDtext.text = "Character Stats:\n\nHP: " + HP.ToString() + "\nAtk: " + Atk.ToString() + "\nSpd: " + Spd.ToString()
             + "\nDef: " + Def.ToString() + "\nLck: " + Lck.ToString() + "\nMov: " + Mov.ToString();
     }
 
     public void OnTriggerExit2D(Collider2D other)
     {
-        HUDtext.text = "move cursor over a character to view stats.";
+        HUDtext.text = "move cursor over a character to view stats.\n\n Press 'space' to take control of one of your characters.\n\n press 'w' to reactivate the cursor.";
+        mainPlayerSelect = false;
     }
 
 	// Update is called once per frame
-	//void Update () {
+	void Update () {
+        // allows player to control unit, if selected as main character. 
+        if (mainPlayer == true && playableCharacter == true)
+        {
+            if (Input.GetAxisRaw("Horizontal") > .5f || Input.GetAxisRaw("Horizontal") < -.5f)
+            {
+                transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * Mov * Time.deltaTime, 0f, 0f));
+            }
 
-	//}
+            if (Input.GetAxisRaw("Vertical") > .5f || Input.GetAxisRaw("Vertical") < -.5f)
+            {
+                transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * Mov * Time.deltaTime, 0f));
+            }
+        }
+
+        if(Input.GetKeyDown("space") && mainPlayerSelect == true){
+            cursor2.gameObject.SetActive(false);
+            mainPlayer = true;
+        }
+
+        if (Input.GetKeyDown("w") && mainPlayerSelect == false)
+        {
+            cursor2.gameObject.SetActive(true);
+            mainPlayer = false;
+        }
+	}
 }

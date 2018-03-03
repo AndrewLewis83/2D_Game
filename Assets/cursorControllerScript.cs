@@ -5,7 +5,7 @@ using UnityEngine;
 public class cursorControllerScript : MonoBehaviour {
 	public AudioSource confirm;
 	public AudioSource deny;
-	public bool isally;
+    public bool isally;
 	
     public float moveSpeed;
 
@@ -14,9 +14,10 @@ public class cursorControllerScript : MonoBehaviour {
 		confirm = GetComponent<AudioSource>();
 		deny = GetComponent<AudioSource>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
+
         if(Input.GetAxisRaw("Horizontal") > .5f || Input.GetAxisRaw("Horizontal") < -.5f){
             transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
         }

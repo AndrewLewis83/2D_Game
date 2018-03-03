@@ -329,7 +329,6 @@
   <ItemGroup>
     <Compile Include="Assets\Characters.cs" />
     <Compile Include="Assets\Controls.cs" />
-    <Compile Include="Assets\cursor_script.cs" />
     <Compile Include="Assets\cursorCollisionScript.cs" />
     <Compile Include="Assets\cursorControllerScript.cs" />
     <Compile Include="Assets\HUDtext.cs" />

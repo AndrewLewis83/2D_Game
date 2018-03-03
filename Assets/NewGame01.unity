@@ -293,6 +293,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ally: 0
+  mainPlayer: 0
+  mainPlayerSelect: 0
+  playableCharacter: 0
+  cursor2: {fileID: 0}
   HP: 0
   Atk: 0
   Spd: 0
@@ -352,7 +356,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &110089272
 GameObject:
@@ -461,7 +465,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &161866593
 GameObject:
@@ -515,7 +519,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &331567046
 GameObject:
@@ -569,7 +573,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &339009467
 GameObject:
@@ -638,7 +642,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: move cursor over a character to view stats.
+  m_Text: 'move cursor over a character to view stats.
+
+
+    Press "space" to take control of one of your characters.
+
+
+    press "w" to reactivate the cursor.'
 --- !u!222 &339009470
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -752,7 +762,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &388688898
 GameObject:
@@ -861,7 +871,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &392825023
 GameObject:
@@ -915,7 +925,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &396120172
 GameObject:
@@ -6847,6 +6857,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ally: 0
+  mainPlayer: 0
+  mainPlayerSelect: 0
+  playableCharacter: 0
+  cursor2: {fileID: 0}
   HP: 0
   Atk: 0
   Spd: 0
@@ -6884,7 +6898,7 @@ Transform:
   m_Children:
   - {fileID: 1827142361}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &507493059
 BoxCollider2D:
@@ -6943,6 +6957,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ally: 1
+  mainPlayer: 0
+  mainPlayerSelect: 0
+  playableCharacter: 1
+  cursor2: {fileID: 1077316459}
   HP: 0
   Atk: 0
   Spd: 0
@@ -7184,7 +7202,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &731118837
 GameObject:
@@ -7238,7 +7256,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &842543166
 GameObject:
@@ -7410,6 +7428,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ally: 1
+  mainPlayer: 0
+  mainPlayerSelect: 0
+  playableCharacter: 1
+  cursor2: {fileID: 1077316459}
   HP: 0
   Atk: 0
   Spd: 0
@@ -7469,7 +7491,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &913470987
 GameObject:
@@ -7523,7 +7545,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &916531248
 GameObject:
@@ -7668,7 +7690,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &985708144
 GameObject:
@@ -7791,7 +7813,7 @@ Transform:
   m_Children:
   - {fileID: 1815013329}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &989535180
 Rigidbody2D:
@@ -7850,6 +7872,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ally: 1
+  mainPlayer: 0
+  mainPlayerSelect: 0
+  playableCharacter: 1
+  cursor2: {fileID: 1077316459}
   HP: 0
   Atk: 0
   Spd: 0
@@ -7909,7 +7935,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1077316459
 GameObject:
@@ -7998,7 +8024,7 @@ Transform:
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1077316463
 BoxCollider2D:
@@ -8172,7 +8198,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1168007693
 GameObject:
@@ -8204,6 +8230,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ally: 1
+  mainPlayer: 0
+  mainPlayerSelect: 0
+  playableCharacter: 1
+  cursor2: {fileID: 1077316459}
   HP: 0
   Atk: 0
   Spd: 0
@@ -8268,7 +8298,7 @@ Transform:
   m_Children:
   - {fileID: 1692303408}
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1229099453
 GameObject:
@@ -8522,7 +8552,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1489338647
 GameObject:
@@ -8576,7 +8606,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1528906240
 GameObject:
@@ -8630,7 +8660,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1537439878
 GameObject:
@@ -8684,7 +8714,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1611904160
 GameObject:
@@ -8738,7 +8768,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1692303407
 GameObject:
@@ -8974,7 +9004,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1780549615
 GameObject:
@@ -9028,7 +9058,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1815013326
 GameObject:
@@ -9300,7 +9330,7 @@ RectTransform:
   - {fileID: 1229099454}
   - {fileID: 339009468}
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9359,7 +9389,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1982370884
 GameObject:
@@ -9391,7 +9421,7 @@ Transform:
   m_Children:
   - {fileID: 572067970}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1982370886
 BoxCollider2D:
@@ -9450,6 +9480,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ally: 1
+  mainPlayer: 0
+  mainPlayerSelect: 0
+  playableCharacter: 1
+  cursor2: {fileID: 1077316459}
   HP: 0
   Atk: 0
   Spd: 0
@@ -9546,6 +9580,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ally: 0
+  mainPlayer: 0
+  mainPlayerSelect: 0
+  playableCharacter: 0
+  cursor2: {fileID: 0}
   HP: 0
   Atk: 0
   Spd: 0
@@ -9642,6 +9680,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ally: 0
+  mainPlayer: 0
+  mainPlayerSelect: 0
+  playableCharacter: 0
+  cursor2: {fileID: 0}
   HP: 0
   Atk: 0
   Spd: 0
@@ -9738,6 +9780,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ally: 0
+  mainPlayer: 0
+  mainPlayerSelect: 0
+  playableCharacter: 0
+  cursor2: {fileID: 0}
   HP: 0
   Atk: 0
   Spd: 0
@@ -9805,5 +9851,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

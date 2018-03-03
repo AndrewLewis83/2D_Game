@@ -186,9 +186,9 @@
 -define:ENABLE_VSTU
 'Assets/Characters.cs'
 'Assets/Controls.cs'
-'Assets/cursor_script.cs'
 'Assets/cursorCollisionScript.cs'
 'Assets/cursorControllerScript.cs'
+'Assets/HUDtext.cs'
 'Assets/main_script.cs'
 'Assets/map_grid_script.cs'
 'Assets/menu.cs'

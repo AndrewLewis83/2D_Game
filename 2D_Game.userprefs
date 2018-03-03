@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{D733E416-6BF5-CD8F-DC97-21A729BA9F5C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Characters.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/cursorControllerScript.cs">
     <Files>
       <File FileName="Assets/menu.cs" Line="8" Column="56" />
       <File FileName="Assets/main_script.cs" Line="1" Column="1" />
       <File FileName="Assets/map_grid_script.cs" Line="1" Column="1" />
-      <File FileName="Assets/cursorCollisionScript.cs" Line="12" Column="3" />
+      <File FileName="Assets/cursorCollisionScript.cs" Line="24" Column="1" />
       <File FileName="Assets/HUDtext.cs" Line="1" Column="1" />
-      <File FileName="Assets/Characters.cs" Line="1" Column="1" />
+      <File FileName="Assets/Characters.cs" Line="34" Column="12" />
+      <File FileName="Assets/cursorControllerScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
