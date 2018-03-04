@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio for Mac
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2D_Game", "2D_Game.csproj", "{D733E416-6BF5-CD8F-DC97-21A729BA9F5C}"
 EndProject
 Global
