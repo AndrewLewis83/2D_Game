@@ -22,6 +22,8 @@ public class Characters : MonoBehaviour {
     public int Mov;
 
     private Rigidbody2D characterRigidBody;
+    public AudioClip hurtSound;
+    private AudioSource source;
 
     private bool moving;
 
@@ -55,6 +57,9 @@ public class Characters : MonoBehaviour {
 
         timeToMoveCounter = timeBetweenMove;
         timeToMoveCounter = timeToMove;
+
+        source = GetComponent<AudioSource>();
+
 	}
 
     public void OnTriggerEnter2D(Collider2D other)
@@ -63,8 +68,9 @@ public class Characters : MonoBehaviour {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
-        if(other.tag == "enemy"){
+        if (other.tag == "enemy" && mainPlayer == true){
             HP -= 5;
+            source.Play();
         }
     }
 
