@@ -6,7 +6,7 @@
       <File FileName="Assets/map_grid_script.cs" Line="1" Column="1" />
       <File FileName="Assets/cursorCollisionScript.cs" Line="24" Column="1" />
       <File FileName="Assets/HUDtext.cs" Line="1" Column="1" />
-      <File FileName="Assets/Characters.cs" Line="80" Column="32" />
+      <File FileName="Assets/Characters.cs" Line="73" Column="22" />
       <File FileName="Assets/cursorControllerScript.cs" Line="13" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>

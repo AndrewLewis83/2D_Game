@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Characters : MonoBehaviour {
 	
@@ -11,6 +12,8 @@ public class Characters : MonoBehaviour {
     public bool playableCharacter; // prevents player from taking control of enemy player.
     public GameObject cursor2; // allows player to reactivate cursor
 
+    public Text HUDtext; // for populating HUD with player stats;
+
 	public int HP;
     public int Atk; 
     public int Spd;
@@ -18,7 +21,17 @@ public class Characters : MonoBehaviour {
     public int Lck;
     public int Mov;
 
-    public Text HUDtext; // for populating HUD with player stats;
+    private Rigidbody2D characterRigidBody;
+
+    private bool moving;
+
+    public float timeBetweenMove;
+    private float timeBetweenMoveCounter;
+    public float timeToMove;
+    private float timeToMoveCounter;
+
+    private Vector3 moveDirection;
+
 
         //Functions
         void Change_Hp(int iAtk, int ispd){
@@ -36,15 +49,33 @@ public class Characters : MonoBehaviour {
 		Spd = Random.Range(6, 13);
 		Def = Random.Range(5, 9);
 		Lck = Random.Range(1, 7);
-		Mov = 5; 
+		Mov = 5;
+
+        characterRigidBody = GetComponent<Rigidbody2D>();
+
+        timeToMoveCounter = timeBetweenMove;
+        timeToMoveCounter = timeToMove;
 	}
-	
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "key" && mainPlayer == true){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
+
     public void OnTriggerStay2D(Collider2D other)
     {
 
         mainPlayerSelect = true;
         HUDtext.text = "Character Stats:\n\nHP: " + HP.ToString() + "\nAtk: " + Atk.ToString() + "\nSpd: " + Spd.ToString()
             + "\nDef: " + Def.ToString() + "\nLck: " + Lck.ToString() + "\nMov: " + Mov.ToString();
+
+        if (other.tag == "walls")
+        {
+            Mov = -5;
+            Mov = 5;
+        }
     }
 
     public void OnTriggerExit2D(Collider2D other)
@@ -66,6 +97,31 @@ public class Characters : MonoBehaviour {
             if (Input.GetAxisRaw("Vertical") > .5f || Input.GetAxisRaw("Vertical") < -.5f)
             {
                 transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * Mov * Time.deltaTime, 0f));
+            }
+        }
+
+        if (ally == false)
+        {
+            if (moving)
+            {
+                timeToMoveCounter -= Time.deltaTime;
+                characterRigidBody.velocity = moveDirection;
+
+                if(timeToMoveCounter < 0f){
+                    moving = false;
+                    timeBetweenMoveCounter = timeBetweenMove;
+                }
+            }
+            else
+            {
+                timeBetweenMoveCounter -= Time.deltaTime;
+                characterRigidBody.velocity = Vector2.zero;
+                if (timeBetweenMoveCounter < 0f){
+                    moving = true;
+                    timeToMoveCounter = timeToMove;
+
+                    moveDirection = new Vector3(Random.Range(-1f, 1f) * Mov, Random.Range(-1f, 1f) * Mov, 0f);
+                }
             }
         }
 
