@@ -18,6 +18,7 @@ public class cursorControllerScript : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
+        // allows user to control cursor with arrow keys
         if(Input.GetAxisRaw("Horizontal") > .5f || Input.GetAxisRaw("Horizontal") < -.5f){
             transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
         }

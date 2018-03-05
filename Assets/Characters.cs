@@ -22,6 +22,7 @@ public class Characters : MonoBehaviour {
     public int Mov;
 
     private Rigidbody2D characterRigidBody;
+
     public AudioClip hurtSound;
     private AudioSource source;
 
@@ -71,6 +72,7 @@ public class Characters : MonoBehaviour {
         if (other.tag == "enemy" && mainPlayer == true){
             HP -= 5;
             source.Play();
+
         }
     }
 
@@ -79,7 +81,7 @@ public class Characters : MonoBehaviour {
 
         mainPlayerSelect = true;
         HUDtext.text = "Character Stats:\n\nHP: " + HP.ToString() + "\nAtk: " + Atk.ToString() + "\nSpd: " + Spd.ToString()
-            + "\nDef: " + Def.ToString() + "\nLck: " + Lck.ToString() + "\nMov: " + Mov.ToString();
+            + "\nDef: " + Def.ToString() + "\nLck: " + Lck.ToString() + "\nMov: " + Mov.ToString();   
     }
 
     public void OnTriggerExit2D(Collider2D other)
@@ -91,9 +93,11 @@ public class Characters : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        // kills the character if HP expires.
         if(HP <= 0){
             this.enabled = false;
         }
+
         // allows player to control unit, if selected as main character. 
         if (mainPlayer == true && playableCharacter == true)
         {
@@ -108,6 +112,7 @@ public class Characters : MonoBehaviour {
             }
         }
 
+        // rudimentary ai controls enemy character 
         if (ally == false)
         {
             if (moving)
@@ -133,11 +138,13 @@ public class Characters : MonoBehaviour {
             }
         }
 
+        // allows player to select character as mainPlayer when the cursor is colliding with character.
         if(Input.GetKeyDown("space") && mainPlayerSelect == true){
             cursor2.gameObject.SetActive(false);
             mainPlayer = true;
         }
 
+        // allows player to deselect main character and reactivates the cursor.
         if (Input.GetKeyDown("w") && mainPlayerSelect == false)
         {
             cursor2.gameObject.SetActive(true);

@@ -331,9 +331,9 @@
     <Compile Include="Assets\Controls.cs" />
     <Compile Include="Assets\cursorCollisionScript.cs" />
     <Compile Include="Assets\cursorControllerScript.cs" />
-    <Compile Include="Assets\main_script.cs" />
     <Compile Include="Assets\map_grid_script.cs" />
     <Compile Include="Assets\menu.cs" />
+    <Compile Include="Assets\turn_logic.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -259,7 +259,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 413202185}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &413202187
 Behaviour:
   m_ObjectHideFlags: 0
@@ -425,8 +425,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.3, y: -177}
-  m_SizeDelta: {x: 311.8, y: 500}
+  m_AnchoredPosition: {x: 5, y: -284}
+  m_SizeDelta: {x: 311.8, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &541830137
 MonoBehaviour:
@@ -460,41 +460,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'World Building - Pierce Hopkins
-
-
-    Character Sprites - Jose Ortega
-
-
-    Menu UI - Andy Lewis
-
-
-    Pixel Gothic font by Kajetan Andrzejak (https://www.dafont.com/search.php?q=gothic)
-
-
-    tutorial on scrolling credits: https://www.youtube.com/watch?v=cj6hwCjiVZE
-
-
-    tutorial on menu UI: https://www.youtube.com/watch?v=zc8ac_qUXQY
-
-
-    HUD font:
-
-    https://www.dafont.com/search.php?q=irish
-
-
-    Tutorial for coding HUD:
-
-    https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial/displaying-score-and-text
-
-
-    "ouch" sound effect by OwlStorm
-
-    https://freesound.org/people/OwlStorm/sounds/404747/
-
-
-
-'
+  m_Text: "World Building and custom sounds - Pierce Hopkins\n\nCharacter Sprites
+    and character animation - Jose Ortega\n\nMenu UI and cursor implentation - Andy
+    Lewis\n\nAll sounds and artwork are custom unless specified otherwise.\n\nPixel
+    Gothic font by Kajetan Andrzejak (https://www.dafont.com/search.php?q=gothic)\n\nHUD
+    font:\nhttps://www.dafont.com/search.php?q=irish\n\nwar-horn sound by jordivburgel\nhttps://freesound.org/people/jordivburgel/sounds/217343/\n\ntutorial
+    on scrolling credits: https://www.youtube.com/watch?v=cj6hwCjiVZE\n\ntutorial
+    on menu UI: https://www.youtube.com/watch?v=zc8ac_qUXQY\n\nTutorial for coding
+    HUD:\nhttps://unity3d.com/learn/tutorials/projects/roll-ball-tutorial/displaying-score-and-text\n\nTutorials
+    for character movement:\nhttps://www.youtube.com/playlist?list=PLiyfvmtjWC_X6e0EYLPczO9tNCkm2dzkm
+    \ \n\n\n"
 --- !u!222 &541830138
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -736,7 +711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &844879800
 RectTransform:
   m_ObjectHideFlags: 0
@@ -808,7 +783,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &847915499
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1249,7 +1224,7 @@ Animator:
   m_GameObject: {fileID: 1554805749}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: da8658e55ae8f47d489a02831b01e8a5, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6e53fd31c6aeb4a06a68aaa9d5ba4662, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
