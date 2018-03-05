@@ -62,6 +62,10 @@ public class Characters : MonoBehaviour {
         if(other.tag == "key" && mainPlayer == true){
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
+
+        if(other.tag == "enemy"){
+            HP -= 5;
+        }
     }
 
     public void OnTriggerStay2D(Collider2D other)
@@ -70,12 +74,6 @@ public class Characters : MonoBehaviour {
         mainPlayerSelect = true;
         HUDtext.text = "Character Stats:\n\nHP: " + HP.ToString() + "\nAtk: " + Atk.ToString() + "\nSpd: " + Spd.ToString()
             + "\nDef: " + Def.ToString() + "\nLck: " + Lck.ToString() + "\nMov: " + Mov.ToString();
-
-        if (other.tag == "walls")
-        {
-            Mov = -5;
-            Mov = 5;
-        }
     }
 
     public void OnTriggerExit2D(Collider2D other)
@@ -86,6 +84,10 @@ public class Characters : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+        if(HP <= 0){
+            this.enabled = false;
+        }
         // allows player to control unit, if selected as main character. 
         if (mainPlayer == true && playableCharacter == true)
         {
