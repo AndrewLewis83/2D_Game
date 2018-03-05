@@ -10,4 +10,7 @@ EditorBuildSettings:
     guid: ba4038c8f12d942f990ecbc426ce605e
   - enabled: 1
     path: Assets/NewGame01.unity
-    guid: dbd24e972aac0ed438a885076f94db89
+    guid: 4fa03583656a34dd8b73bf8eb0fb5be9
+  - enabled: 1
+    path: Assets/Victory.unity
+    guid: 1e1dbe6f833d3458f86fcb0486fc07c4
